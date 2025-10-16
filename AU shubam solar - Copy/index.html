@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AU Shubam Solar — Solar Solutions</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Commercial & residential solar solutions — design, installation & service.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">AU Shubam Solar</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" onclick="handleClick(event, 'nav-home')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)" onfocus="handleFocus(event)" onblur="handleBlur(event)">Home</a>
+        <a href="#services" onclick="handleClick(event, 'nav-services')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)" onfocus="handleFocus(event)" onblur="handleBlur(event)">Services</a>
+        <a href="#projects" onclick="handleClick(event, 'nav-projects')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)" onfocus="handleFocus(event)" onblur="handleBlur(event)">Projects</a>
+        <a href="#blog" onclick="handleClick(event, 'nav-blog')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)" onfocus="handleFocus(event)" onblur="handleBlur(event)">Blog</a>
+        <a href="#contact" onclick="handleClick(event, 'nav-contact')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)" onfocus="handleFocus(event)" onblur="handleBlur(event)">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Clean energy for homes & businesses</h1>
+          <p>Design · Install · Maintain — turnkey solar photovoltaic systems that reduce your bills and carbon footprint.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" onclick="handleClick(event, 'hero-request-quote')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">Request Quote</a>
+            <a class="btn btn-ghost" href="#projects" onclick="handleClick(event, 'hero-see-projects')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">See Projects</a>
+          </div>
+
+          <ul class="stats">
+            <li><strong onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">150+</strong><span>Projects</span></li>
+            <li><strong onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">10+</strong><span>Years</span></li>
+            <li><strong onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">24/7</strong><span>Support</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-placeholder" role="logo.jpeg" aria-label="Illustration of solar array" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <img src="logo.jpeg" alt="AU Shubam Solar Logo" />
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">From rooftop residential systems to large commercial installations, we handle everything.</p>
+
+        <div class="cards-grid">
+          <article class="card" role="button" tabindex="0" onclick="handleClick(event, 'card-residential')" onkeydown="handleKeyDown(event, 'card-residential')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <h3>Residential Solar</h3>
+            <p>Custom rooftop systems with financing & net-metering support for homeowners.</p>
+            <a href="#contact" class="link-inline" onclick="handleClick(event, 'card-residential-link')">Get started →</a>
+          </article>
+
+          <article class="card" role="button" tabindex="0" onclick="handleClick(event, 'card-commercial')" onkeydown="handleKeyDown(event, 'card-commercial')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <h3>Commercial & Industrial</h3>
+            <p>Large-scale solar design & installation to cut operational costs for businesses.</p>
+            <a href="#contact" class="link-inline" onclick="handleClick(event, 'card-commercial-link')">Talk to an expert →</a>
+          </article>
+
+          <article class="card" role="button" tabindex="0" onclick="handleClick(event, 'card-battery')" onkeydown="handleKeyDown(event, 'card-battery')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <h3>Battery Storage</h3>
+            <p>Integrate energy storage for off-grid capability and peak shaving.</p>
+            <a href="#contact" class="link-inline" onclick="handleClick(event, 'card-battery-link')">Learn more →</a>
+          </article>
+
+          <article class="card" role="button" tabindex="0" onclick="handleClick(event, 'card-om')" onkeydown="handleKeyDown(event, 'card-om')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <h3>O&M & Monitoring</h3>
+            <p>Monitoring, preventive maintenance and rapid fault repair services.</p>
+            <a href="#contact" class="link-inline" onclick="handleClick(event, 'card-om-link')">Schedule service →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A few installations across residential and commercial rooftops.</p>
+
+        <div class="projects-grid">
+          <figure class="project-card" role="button" tabindex="0" onclick="handleClick(event, 'project-indore')" onkeydown="handleKeyDown(event, 'project-indore')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="project-thumb">Image</div>
+            <figcaption>
+              <h4>Residential — MANDLESWAR</h4>
+              <p>5 kW rooftop system.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project-card" role="button" tabindex="0" onclick="handleClick(event, 'project-bhopal')" onkeydown="handleKeyDown(event, 'project-bhopal')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="project-thumb">Image</div>
+            <figcaption>
+              <h4>Factory — Devas</h4>
+              <p>100 kW ground-mounted system with monitoring.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project-card" role="button" tabindex="0" onclick="handleClick(event, 'project-pune')" onkeydown="handleKeyDown(event, 'project-pune')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="project-thumb">Image</div>
+            <figcaption>
+              <h4>Commercial — project-indore</h4>
+              <p>40 kW rooftop system with hybrid inverter.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project-card" role="button" tabindex="0" onclick="handleClick(event, 'project-jaipur')" onkeydown="handleKeyDown(event, 'project-jaipur')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="project-thumb">Image</div>
+            <figcaption>
+              <h4>School — MANDLESWAR</h4>
+              <p>10 kW system at Sandipani academy training.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2 class="section-title">From our blog</h2>
+        <p class="section-sub">Latest news and guides about solar energy and policy.</p>
+
+        <div class="blog-grid">
+          <article class="blog-card" role="button" tabindex="0" onclick="handleClick(event, 'blog-roi')" onkeydown="handleKeyDown(event, 'blog-roi')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="blog-thumb">Image</div>
+            <div class="blog-body">
+              <h4>Solar ROI: What to expect</h4>
+              <p>Understand payback time, incentives, and lifetime savings for a typical rooftop PV system.</p>
+              <a class="link-inline" href="#" onclick="handleClick(event, 'blog-roi-link')">Read more →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="button" tabindex="0" onclick="handleClick(event, 'blog-maintenance')" onkeydown="handleKeyDown(event, 'blog-maintenance')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="blog-thumb">Image</div>
+            <div class="blog-body">
+              <h4>Maintenance tips</h4>
+              <p>Simple maintenance practices to keep your solar system performing at peak levels.</p>
+              <a class="link-inline" href="#" onclick="handleClick(event, 'blog-maintenance-link')">Read more →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="button" tabindex="0" onclick="handleClick(event, 'blog-netmetering')" onkeydown="handleKeyDown(event, 'blog-netmetering')" onmouseenter="handleHoverEnter(event)" onmouseleave="handleHoverLeave(event)">
+            <div class="blog-thumb">Image</div>
+            <div class="blog-body">
+              <h4>Net metering explained</h4>
+              <p>How net-metering works and how it benefits residential customers.</p>
+              <a class="link-inline" href="#" onclick="handleClick(event, 'blog-netmetering-link')">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section alt-bg">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Ready to switch to solar? Send us a message or request a site visit.</p>
+
+          <ul class="contact-list">
+            <li><strong>Office:</strong> OPPOSITE TO COURT, MANDLESWAR</li>
+            <li><strong>Phone:</strong> +91 98765 43210</li>
+            <li><strong>Email:</strong> kuldeeppatidar1207@gmail.com</li>
+            <li><strong>Hours:</strong> Mon–Sat, 9:00–18:00</li>
+          </ul>
+
+          <div class="map-placeholder">Map (replace with embedded map)</div>
+        </div>
+
+        <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); handleFormSubmit(event)">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your full name" onfocus="handleFocus(event)" onblur="handleBlur(event)">
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" onfocus="handleFocus(event)" onblur="handleBlur(event)">
+          </label>
+
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="+91 9XXXXXXXXX" onfocus="handleFocus(event)" onblur="handleBlur(event)">
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your project" onfocus="handleFocus(event)" onblur="handleBlur(event)"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a class="brand footer-brand" href="#">AU Shubam Solar</a>
+        <p>Design • Install • Maintain</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>+91 98765 43210<br>info@aushubamsolar.example</p>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>© <span id="year"></span> AU Shubam Solar — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('mainNav');
+    const navToggle = document.getElementById('navToggle');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Basic handlers wired from inline attributes
+    function handleClick(event, id) {
+      // Keep default behavior for normal links; prevent only when needed
+      console.log('click', id);
+      // small visual feedback for clickable cards
+      const el = event.currentTarget || event.target;
+      if (el && el.classList && el.classList.contains('card')) {
+        el.classList.add('active');
+        setTimeout(() => el.classList.remove('active'), 200);
+      }
+    }
+
+    function handleHoverEnter(event) {
+      const el = event.currentTarget || event.target;
+      el && el.classList && el.classList.add('hover');
+    }
+
+    function handleHoverLeave(event) {
+      const el = event.currentTarget || event.target;
+      el && el.classList && el.classList.remove('hover');
+    }
+
+    function handleFocus(event) {
+      const el = event.currentTarget || event.target;
+      el && el.classList && el.classList.add('focus');
+    }
+
+    function handleBlur(event) {
+      const el = event.currentTarget || event.target;
+      el && el.classList && el.classList.remove('focus');
+    }
+
+    function handleKeyDown(event, id) {
+      // Activate on Enter or Space for elements with role=button
+      const key = event.key;
+      if (key === 'Enter' || key === ' ') {
+        event.preventDefault();
+        handleClick(event, id);
+      }
+    }
+
+    function handleFormSubmit(e) {
+      const form = e.currentTarget || e.target;
+      const data = new FormData(form);
+      const obj = {};
+      for (const [k, v] of data.entries()) obj[k] = v;
+      console.log('form submit (demo)', obj);
+      // demo confirmation
+      alert('Form submitted (demo) — thank you, ' + (obj.name || 'valued customer') + '!');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
